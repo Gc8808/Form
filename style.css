@@ -1,4 +1,6 @@
 body {
+    padding: 20px;
+    padding-top: 30px;
     background-color: black;
     color: whitesmoke;
     
@@ -7,4 +9,31 @@ body {
 .box {
     border-color: white;
     border: solid dotted;
+}
+
+button {
+    .css-button-3d--red {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background: #ef233c;
+        box-shadow: 0 5px #d90429;
+      }
+      .css-button-3d--red:hover {
+        box-shadow: 0 3px #d90429;
+        top: 1px;
+      }
+      .css-button-3d--red:active {
+        box-shadow: 0 0 #d90429;
+        top: 5px;
+      }
 }
