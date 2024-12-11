@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    
+}
+
+.box {
+    border-color: white;
+    border: solid dotted;
+}
