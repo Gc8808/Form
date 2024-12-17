@@ -1,18 +1,20 @@
 //Generate Prefix
 function genPrefix (firstName) {
     if (firstName.length > 5) {
-      return 'The Great'
+      return 'King'
     } else {
-      return 'Master'
+      return 'Prince'
     }
   }
   //generate first name
   function genFirstName (firstName) {
     const firstLetter = firstName.charAt(0).toLowerCase()
     if (firstLetter === 'a') {
-      return 'Jeff'
+      return 'John'
     } else if (firstLetter === 'b') {
-      return 'Pablo'
+      return 'Dan'
+    }else if (firstLetter === 'G') {
+      return 'Matthew'
     } else {
       return 'Julian'
     }
@@ -20,10 +22,10 @@ function genPrefix (firstName) {
   
   //generate middle name
   function genMiddleName (roadType, favoriteColor) {
-    if (roadType === 'road') {
-      return `${favoriteColor}ridge` //EX:  blueridge
-    } else if (roadType === 'street') {
-      return `${favoriteColor}son` //EX: blueson
+    if (roadType === 'road'&& favoriteColor === 'Red' ) {
+      return `Blackstone` //EX:  blueridge
+    }else if (roadType === 'street' || favoriteColor === 'blue') {
+      return `Bluestream` //EX: blueson
     } else {
       return `${favoriteColor}stone` //EX: bluestone
     }
@@ -33,23 +35,44 @@ function genPrefix (firstName) {
   function genLastName (lastName) {
     const lastLetter = lastName.charAt(lastName.length - 1)
     if (lastLetter === 'a') {
-      return 'Shadow'
+      return 'Light'
     } else if (lastLetter === 'e') {
-      return 'Storm'
+      return 'lightning'
     } else if (lastLetter === 'i') {
-      return 'Blaze'
+      return 'Spike'
     } else if (lastLetter === 'o') {
-      return 'Thorn'
+      return 'Ice'
     } else if (lastLetter === 'u') {
-      return 'Frost'
+      return 'Flame'
     } else {
-      return 'Moon' // Default last name for letters not matched
+      return 'Sun' // Default last name for letters not matched
     }
   }
   
   //generate Suffix
   function genSuffix (favoriteAnimal) {
-    return `of ${favoriteAnimal} clan.`
+    switch (genSuffix){
+      case 'dog':
+        return "Red clan";
+        
+      case 'cat':
+        return "Blue clan";
+     
+      case 'Fox':
+        return "Yellow clan";
+      
+      case 'snow leapard':
+        return "White clan";
+      
+      case 'Aidtya':
+        return "Indian clan";
+        
+      case 'federico':
+        return "Italian clan";
+        
+        default:
+          return "Portugeuse clan";
+    }
   }
   
   //MAster Name Building FUnction
