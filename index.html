@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>My ____ Name Generator</title>
+    <title>Name generator</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -21,10 +21,13 @@
         <div class="container">
             <!--Instructions-->
             <div class="text-center mb-4">
-                <h1>Fantasy Name Generator</h1>
+                <div ">
+                <h1 class="cssanimation leRainDrop sequence">Fantasy Name Generator</h1>
+            </div>
                 <p>Fill out the form below to generate your fantasy name!</p>
             </div>
             <!-- Form Section-->
+             <div class="forms">
             <form id="fantasyForm" class="mb-4">
                 <!-- Get First Name-->
                 <div class="mb-3">
@@ -59,13 +62,16 @@
                     </select>
                 </div>
                 <!--Submit Button-->
-                <div type="submit" class="btn btn-primary w-100" onclick="genFullName()">Generate Name</div>
+                <div type="submit" class="btn btn-primary w-100 button" onclick="genFullName()">Generate Name</div>
             </form>
+        </div>
             <!--Generated Name Output-->
+            <div class="resp">
+                <h6>Your name will appear below:</h6>
             <div class="result" id="result">
 
             </div>
-
+        </div>
         </div>
     </main>
     <footer>
