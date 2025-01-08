@@ -59,7 +59,7 @@ function genSuffix(favoriteAnimal) {
       return "Yellow clan";
     case 'snow leapard':
       return "White clan";
-    case 'Aidtya':
+    case 'Aditya':
       return "Indian clan";
     case 'federico':
       return "Italian clan";
